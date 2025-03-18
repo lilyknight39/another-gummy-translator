@@ -1,0 +1,4 @@
+dashscope
+pyaudio
+wxPython
+requests
