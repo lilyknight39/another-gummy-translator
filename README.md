@@ -2,7 +2,7 @@
 
 ## 项目描述
 
-- gummy-translator 是一个实时翻译字幕工具，通过调用百炼平台的 Gummy 实时语音翻译模型和 SiliconFlow CosyVoice 流式语音合成，实现低延迟、实时的同声传译和实时双语字幕。
+- gummy-translator 是一个实时翻译字幕工具，修改自阿里云官方例子，通过调用百炼平台的 Gummy 实时语音翻译模型和 SiliconFlow CosyVoice 流式语音合成，实现低延迟、实时的同声传译和实时双语字幕。
 
 ## 主要功能
 
@@ -40,6 +40,11 @@ pip install -r requirements.txt
 ```bash
 python gummy_tanslator.py
 ```
+#### 功能（快捷键）
+
+- Alt+T/t 切换颜色模式（默认浅色模式）
+- Alt+up/down 增减亮度
+- Alt+s 启用/禁用tts（默认禁用）
 
 ## 许可证
 
