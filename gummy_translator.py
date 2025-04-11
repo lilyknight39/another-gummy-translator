@@ -275,7 +275,7 @@ class FloatingSubtitleWindow(wx.Frame):
         self.text_color = wx.Colour(0, 0, 0)
         self.MAX_CHARS = 1000
 
-        self.SetSize((900,130))
+        self.SetSize((900,110))
     
         # 添加文本面板透明度属性
         self.text_alpha = 128  # 初始背景透明度值
@@ -308,7 +308,7 @@ class FloatingSubtitleWindow(wx.Frame):
         
         # 添加到布局
         self.main_sizer.Add(self.chinese_panel, 0, wx.EXPAND | wx.ALL, 2)
-        self.main_sizer.AddSpacer(10)  # 添加一个高度为 10 的空白区域
+        self.main_sizer.AddSpacer(5)  # 添加一个高度为 10 的空白区域
         self.main_sizer.Add(self.target_panel, 1, wx.EXPAND | wx.ALL, 2)
         
         self.panel.SetSizer(self.main_sizer)
@@ -387,7 +387,7 @@ class FloatingSubtitleWindow(wx.Frame):
         #     panel,
         #     style=wx.NO_BORDER
         # )
-        text_box.SetMinSize((300, 30))
+        text_box.SetMinSize((300, 25))
 
         font = wx.Font(
             wx.FontInfo(self.font_size)  # 字号
