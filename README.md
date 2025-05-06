@@ -1,5 +1,7 @@
 # Another Gummy Translator
 
+这是对[原始Gummy Translator](https://github.com/original-author/gummy-translator)的一个分支(Fork)，进行了重构和增强。感谢原项目作者创建的原始项目。
+
 一个现代化、跨平台的实时语音翻译字幕工具，支持多语言翻译、文本朗读和自定义界面。
 
 ## 特性
