@@ -1,3 +1,5 @@
+# 调试阶段，未完成
+
 # Another Gummy Translator
 
 这是对[原始Gummy Translator](https://github.com/ConstantinopleMayor/gummy-translator)的一个分支(Fork)，进行了重构和增强。感谢原项目作者创建的原始项目。
