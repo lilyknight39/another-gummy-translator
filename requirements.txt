@@ -2,3 +2,4 @@ dashscope
 pyaudio
 wxPython
 requests
+cryptography
