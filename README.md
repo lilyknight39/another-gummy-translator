@@ -1,6 +1,6 @@
 # Another Gummy Translator
 
-这是对[原始Gummy Translator](https://github.com/original-author/gummy-translator)的一个分支(Fork)，进行了重构和增强。感谢原项目作者创建的原始项目。
+这是对[原始Gummy Translator](https://github.com/ConstantinopleMayor/gummy-translator)的一个分支(Fork)，进行了重构和增强。感谢原项目作者创建的原始项目。
 
 一个现代化、跨平台的实时语音翻译字幕工具，支持多语言翻译、文本朗读和自定义界面。
 
@@ -99,7 +99,7 @@ python gummy.py
 
 ## 致谢
 
-本项目基于原始的 [Gummy Translator](https://github.com/original-author/gummy-translator) 项目进行了重构和增强。感谢原项目作者提供的灵感和基础代码结构。主要改进包括：
+本项目基于原始的 [Gummy Translator](https://github.com/ConstantinopleMayor/gummy-translator) 项目进行了重构和增强。感谢原项目作者提供的灵感和基础代码结构。主要改进包括：
 
 - 现代化UI界面，支持深色/浅色主题
 - 跨平台兼容性优化
