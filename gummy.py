@@ -1002,7 +1002,7 @@ class ModernFloatingSubtitleWindow(wx.Frame):
         self.pin_tool = toolbar.AddCheckTool(
             wx.ID_ANY,
             "置顶",
-            wx.ArtProvider.GetBitmap(wx.ART_PIN, wx.ART_TOOLBAR),
+            wx.ArtProvider.GetBitmap(wx.ART_GO_UP, wx.ART_TOOLBAR),
             wx.NullBitmap,
             "切换窗口置顶"
         )
@@ -1066,27 +1066,27 @@ class ModernFloatingSubtitleWindow(wx.Frame):
         self.accel_table = []
         
         # Ctrl+S 打开设置
-        id_settings = wx.NewId()
+        id_settings = wx.ID_ANY
         self.Bind(wx.EVT_MENU, self.on_settings, id=id_settings)
         self.accel_table.append((wx.ACCEL_CTRL, ord('S'), id_settings))
         
         # Ctrl+P 切换置顶
-        id_pin = wx.NewId()
+        id_pin = wx.ID_ANY
         self.Bind(wx.EVT_MENU, self.on_toggle_pin, id=id_pin)
         self.accel_table.append((wx.ACCEL_CTRL, ord('P'), id_pin))
         
         # Ctrl+Space 暂停/继续
-        id_pause = wx.NewId()
+        id_pause = wx.ID_ANY
         self.Bind(wx.EVT_MENU, self.on_toggle_pause, id=id_pause)
         self.accel_table.append((wx.ACCEL_CTRL, wx.WXK_SPACE, id_pause))
         
         # Ctrl+L 清空文本
-        id_clear = wx.NewId()
+        id_clear = wx.ID_ANY
         self.Bind(wx.EVT_MENU, self.on_clear, id=id_clear)
         self.accel_table.append((wx.ACCEL_CTRL, ord('L'), id_clear))
         
         # Esc 隐藏窗口
-        id_hide = wx.NewId()
+        id_hide = wx.ID_ANY
         self.Bind(wx.EVT_MENU, lambda e: self.Hide(), id=id_hide)
         self.accel_table.append((wx.ACCEL_NORMAL, wx.WXK_ESCAPE, id_hide))
         
@@ -1399,6 +1399,12 @@ class ModernFloatingSubtitleWindow(wx.Frame):
         """更新状态栏文本"""
         self.update_status(event.text)
     
+    def update_status(self, text):
+        """更新状态栏文本"""
+        if hasattr(self, 'status_bar'):
+            self.status_bar.SetStatusText(text)
+
+
     def update_text(self, transcription_result, translation_result):
         """处理识别和翻译结果"""
         # 限制缓冲区大小，保留最近的20句话
